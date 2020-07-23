@@ -91,4 +91,47 @@ main {
       @include font-raleway;
     }
   }
+
+  .impact {
+    @media only screen and (min-width: $tablet-size) {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+
+      &__text {
+        padding-left: 2rem;
+      }
+
+      &__title {
+        font-size: 2em;
+      }
+    }
+    
+
+    &__img {
+      object-fit: contain;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__link {
+      border-bottom: 1px solid $cyan;
+      display: inline-block;
+      font-size: .9em;
+
+      a {
+        color: $cyan;
+        display: inline-block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+
+    &__flex {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
