@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary-intro;
+  color: $white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  $padding: 5rem;
+
+  padding-left: $padding;
+  padding-right: $padding;
+}
