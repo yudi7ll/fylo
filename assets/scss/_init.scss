@@ -18,3 +18,18 @@ a {
   padding-left: $padding;
   padding-right: $padding;
 }
+
+.btn {
+  @include font-raleway;
+  background-image: linear-gradient(to right, $cyan, $blue);
+  border: none;
+  border-radius: 10rem;
+  box-shadow: 8px 6px 8px rgba($color: #000000, $alpha: .2);
+  color: $white;
+  cursor: pointer;
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  padding: 1rem 5rem;
+}
