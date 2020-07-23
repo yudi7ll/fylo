@@ -7,22 +7,31 @@ header {
   padding-bottom: 2rem;
 
   .brand {
-    padding: 2rem;
-
     img {
-      width: 152px;
+      width: 18vw;
+      max-width: 152px;
     }
   }
 
-  .links a {
-    color: $white;
-    opacity: .8;
-    padding: 1rem;
-    text-decoration: none;
+  .links {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 14px;
 
-    &:hover {
-      opacity: 1;
-      transition: .3s all;
+    a {
+      color: $white;
+      opacity: .8;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 1;
+        transition: .3s all;
+      }
+
+      &:nth-child(2) {
+        margin: 0 1.5rem;
+      }
     }
   }
 }

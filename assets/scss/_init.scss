@@ -6,6 +6,8 @@ body {
   background-color: $primary-intro;
   color: $white;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -13,8 +15,10 @@ a {
 }
 
 .container {
-  $padding: 5rem;
+  $padding: 1.5rem;
 
+  margin: auto;
+  max-width: 1200px;
   padding-left: $padding;
   padding-right: $padding;
 }
@@ -30,6 +34,10 @@ a {
   display: block;
   font-size: 1rem;
   font-weight: bold;
-  outline: none;
   padding: 1rem 5rem;
+
+  &:hover {
+    opacity: .8;
+    transition: .2s all;
+  }
 }

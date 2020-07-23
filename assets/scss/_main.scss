@@ -1,20 +1,94 @@
 main {
+  $tablet-size: 700px;
 
-  img {
-    max-width: 600px;
+  position: relative;
+  
+  &:before {
+    $marginTop: 50%;
+    content: '';
+    background-image: url('../images/bg-curvy-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: $marginTop;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    @media only screen and (min-width: $tablet-size) {
+      background-image: url('../images/bg-curvy-desktop.svg');
+      margin-top: $marginTop - 15%;
+    }
+  }
+
+  &:after {
+    $marginTop: 85%;
+    content: '';
+    background-color: $primary-main;
+    display: block;
+    margin-top: $marginTop;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    @media only screen and (min-width: $tablet-size) {
+      margin-top: $marginTop - 20%;
+    }
   }
 
   .intro {
     $max-width: 552px;
 
+    img {
+      width: 80vw;
+      max-width: 600px;
+    }
+
     &__title {
       @include font-raleway;
+      line-height: 1.5em;
       max-width: $max-width;
+
+      @media only screen and (min-width: $tablet-size) {
+        font-size: 2em;
+      }
     }
 
     &__description {
       font-weight: normal;
+      margin-bottom: 2rem;
       max-width: $max-width - 80px;
+      opacity: .8;
+
+      // mobile only
+      @media only screen and (max-width: $tablet-size) {
+        font-size: .9em;
+      }
+    }
+  }
+
+  .features {
+    display: grid;
+    margin-top: 8rem;
+    text-align: center;
+
+    @media only screen and (min-width: $tablet-size) {
+      column-gap: 5rem;
+      grid-template-columns: auto auto;
+      max-width: 920px;
+    }
+
+    &__card {
+      margin-bottom: 4rem;
+    }
+
+    &__title {
+      @include font-raleway;
     }
   }
 }
