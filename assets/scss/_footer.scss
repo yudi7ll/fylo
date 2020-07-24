@@ -1,0 +1,94 @@
+.footer {
+  $tablet-size: 700px;
+
+  background-color: $primary-footer;
+  padding-top: 15rem;
+  
+  &__logo {
+    margin-bottom: 1rem;
+  }
+
+  &__grid {
+    @media only screen and (min-width: $tablet-size) {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+    }
+
+    & > div {
+      padding-bottom: 1rem;
+      padding-right: 1rem;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__location {
+    align-items: flex-start;
+    display: flex;
+
+    img {
+      height: 20px;
+      margin-top: .5rem;
+      margin-right: 1.5rem;
+      object-fit: contain;
+      width: 20px;
+    }
+
+    small {
+      max-width: 380px;
+    }
+  }
+
+  &__contact {
+
+    &>div {
+      align-items: center;
+      display: flex;
+      margin-bottom: 1rem;
+
+      img {
+        height: 20px;
+        object-fit: contain;
+        margin-right: 1rem;
+        width: 20px;
+      }
+    }
+  }
+
+  &__links {
+    @media only screen and (min-width: $tablet-size) {
+      align-items: flex-start;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &>div {
+      margin-bottom: 1rem;
+
+    }
+
+    a {
+      color: $white;
+      display: block;
+      font-size: .8em;
+      padding: .2rem 0;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+
+  }
+
+  &__sosmed {
+    text-align: center;
+
+    a {
+      color: $white;
+      padding: 0 .2rem;
+      text-decoration: none;
+    }
+  }
+}

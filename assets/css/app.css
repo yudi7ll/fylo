@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import '../../node_modules/font-awesome/css/font-awesome.min.css';
 * {
   box-sizing: border-box;
 }
@@ -31,14 +32,18 @@ a {
   box-shadow: 8px 6px 8px rgba(0, 0, 0, 0.2);
   color: white;
   cursor: pointer;
-  display: block;
-  font-size: 1rem;
+  display: inline-block;
+  font-size: 1em;
   font-weight: bold;
   padding: 1rem 5rem;
 }
 .btn:hover {
   opacity: 0.8;
   transition: 0.2s all;
+}
+.btn--small {
+  font-size: 0.8em;
+  padding: 0.8rem 2rem;
 }
 
 header {
@@ -230,6 +235,136 @@ main .testimonials__profile--bio * {
 }
 main .testimonials__profile--bio small {
   font-size: 0.7em;
+}
+main .get {
+  margin-top: -10rem;
+  transform: translateY(50%);
+}
+main .get__card {
+  background-color: #202a3c;
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 2rem;
+  width: 100%;
+}
+@media only screen and (min-width: 700px) {
+  main .get__card {
+    padding: 2rem 4rem;
+  }
+}
+main .get__card input {
+  background-color: white;
+  border: none;
+  border-radius: 10rem;
+  font-size: 0.8em;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  width: 100%;
+}
+@media only screen and (min-width: 700px) {
+  main .get__card input {
+    width: 60%;
+  }
+}
+main .get__card .btn {
+  box-shadow: none;
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+@media only screen and (min-width: 700px) {
+  main .get__card .btn {
+    display: inline-block;
+    margin-left: 1rem;
+    width: 35%;
+  }
+}
+main .get__title {
+  font-family: Raleway, sans-serif;
+  font-size: 1.4em;
+}
+@media only screen and (min-width: 700px) {
+  main .get__title {
+    font-size: 1.6em;
+  }
+}
+main .get__description {
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+
+.footer {
+  background-color: #0b1523;
+  padding-top: 15rem;
+}
+.footer__logo {
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 700px) {
+  .footer__grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
+.footer__grid > div {
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+.footer__grid > div:last-child {
+  padding-right: 0;
+}
+.footer__location {
+  align-items: flex-start;
+  display: flex;
+}
+.footer__location img {
+  height: 20px;
+  margin-top: 0.5rem;
+  margin-right: 1.5rem;
+  object-fit: contain;
+  width: 20px;
+}
+.footer__location small {
+  max-width: 380px;
+}
+.footer__contact > div {
+  align-items: center;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.footer__contact > div img {
+  height: 20px;
+  object-fit: contain;
+  margin-right: 1rem;
+  width: 20px;
+}
+@media only screen and (min-width: 700px) {
+  .footer__links {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer__links > div {
+  margin-bottom: 1rem;
+}
+.footer__links a {
+  color: white;
+  display: block;
+  font-size: 0.8em;
+  padding: 0.2rem 0;
+}
+.footer__links a:first-child {
+  padding-top: 0;
+}
+.footer__sosmed {
+  text-align: center;
+}
+.footer__sosmed a {
+  color: white;
+  padding: 0 0.2rem;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=app.css.map */

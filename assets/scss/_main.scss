@@ -187,4 +187,63 @@ main {
       }
     }
   }
+
+  .get {
+    margin-top: -10rem;
+    transform: translateY(50%);
+
+    &__card {
+      background-color: $primary-testimonials;
+      border-radius: 8px;
+      margin: 0 auto;
+      max-width: 700px;
+      padding: 2rem;
+      width: 100%;
+
+      @media only screen and (min-width: $tablet-size) {
+        padding: 2rem 4rem;
+      }
+
+      input {
+        background-color: $white;
+        border: none;
+        border-radius: 10rem;
+        font-size: .8em;
+        margin-top: 1.5rem;
+        padding: .7rem 1.5rem;
+        width: 100%;
+
+        @media only screen and (min-width: $tablet-size) {
+          width: 60%;
+        }
+      }
+
+      .btn {
+        box-shadow: none;
+        display: block;
+        margin-top: 1rem;
+        width: 100%;
+
+        @media only screen and (min-width: $tablet-size) {
+          display: inline-block;
+          margin-left: 1rem;
+          width: 35%;
+        }
+      }
+    }
+
+    &__title {
+      @include font-raleway;
+      font-size: 1.4em;
+
+      @media only screen and (min-width: $tablet-size) {
+        font-size: 1.6em;
+      }
+    }
+
+    &__description {
+      font-size: .9em;
+      line-height: 1.4em;
+    }
+  }
 }
