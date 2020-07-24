@@ -73,15 +73,12 @@ main {
   }
 
   .features {
+    column-gap: 5rem;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-top: 8rem;
+    max-width: 920px;
     text-align: center;
-
-    @media only screen and (min-width: $tablet-size) {
-      column-gap: 5rem;
-      grid-template-columns: auto auto;
-      max-width: 920px;
-    }
 
     &__card {
       margin-bottom: 4rem;
