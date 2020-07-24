@@ -18,5 +18,8 @@
     "gh-pages": "^3.1.0",
     "live-server": "^1.2.1",
     "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
   }
 }
