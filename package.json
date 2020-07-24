@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "npm run server & npm run sass:watch",
     "deploy": "gh-pages -d .",
-    "predeploy": "npm i && npm run sass",
-    "sass": "sass ./assets/scss/app.scss ./assets/css/app.css",
+    "predeploy": "npm run sass",
+    "sass": "sass -s compressed ./assets/scss/app.scss ./assets/css/app.css",
     "sass:watch": "npm run sass -- --watch",
     "server": "live-server --host=0.0.0.0"
   },
