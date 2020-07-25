@@ -1,4 +1,4 @@
-# Fylo
+# Fylo Storage
 
 [Demo](https://yudi7ll.github.io/fylo)
 
