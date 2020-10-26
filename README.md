@@ -1,4 +1,4 @@
-# Fylo landing page with dark theme and features grid
+# Fylo Storage
 
 [Demo](https://yudi7ll.github.io/fylo)
 
