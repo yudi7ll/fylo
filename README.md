@@ -1,7 +1,5 @@
 # Fylo Storage
 
-[Demo](https://yudi7ll.github.io/fylo)
-
 ## Local Development
 ```
 > npm install
